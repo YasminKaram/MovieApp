@@ -85,11 +85,17 @@ class HomeScreen extends StatelessWidget {
                                           size: 70, color: AppColors.whitecolor)
                                     ],
                                   ),
-                                  Text("${e.title}",
-                                      maxLines: 3,
-                                      style: AppStyles.movieName.copyWith(
-                                          fontSize: 18.sp,
-                                          fontWeight: FontWeight.w300)),
+                                  Container(
+                                    width: 450.w,
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: Text("${e.title}",
+                                          maxLines: 1,
+                                          style: AppStyles.movieName.copyWith(
+                                              fontSize: 18.sp,
+                                              fontWeight: FontWeight.w300),overflow: TextOverflow.ellipsis,),
+                                    ),
+                                  ),
                                   Text("${e.releaseDate}",
                                       style: AppStyles.movieName.copyWith(
                                           color: AppColors.datecolor,
