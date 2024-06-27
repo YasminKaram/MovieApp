@@ -1,6 +1,7 @@
 # movieDay
 
 A new Flutter project.
+app  to search about your favourite movie easy
 
 ## Getting Started
 
