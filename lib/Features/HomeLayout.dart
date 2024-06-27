@@ -58,7 +58,7 @@ class _HomeLayoutState extends State<HomeLayout> {
                   index = value;
                   setState(() {});
                 },
-                selectedItemColor: AppColors.selectcolor,
+                selectedItemColor: AppColors.whitecolor,
                 unselectedItemColor: AppColors.unselectcolor,
                 elevation: 3,
               ),

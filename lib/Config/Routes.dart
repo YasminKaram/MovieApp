@@ -7,15 +7,18 @@ import 'package:movieapp/Features/HomeScreen/presentation/pages/MovieDetails.dar
 import 'package:movieapp/Features/HomeScreen/presentation/pages/SearchScreen.dart';
 import 'package:movieapp/Features/HomeScreen/presentation/pages/WatchList.dart';
 
+import '../Features/HomeScreen/presentation/pages/startPage.dart';
+
 
 class RoutesName {
-  static const String homeLayout = "/";
+  static const String homeLayout = "homelayout";
   static const String homeScreen = "homeScreen";
   static const String searchScreen = "SearchScreen";
   static const String browse = "browse";
   static const String wathList = "watchlist";
   static const String movieDetails = "details";
   static const String moviecategory = "moviecategory";
+  static const String startPage = "/";
 }
 
 class AppRoute {
@@ -50,6 +53,11 @@ class AppRoute {
       case RoutesName.moviecategory:
         return MaterialPageRoute(
           builder: (context) => MovieByCategory(),
+
+        );
+      case RoutesName.startPage:
+        return MaterialPageRoute(
+          builder: (context) => StartPage(),
 
         );
         

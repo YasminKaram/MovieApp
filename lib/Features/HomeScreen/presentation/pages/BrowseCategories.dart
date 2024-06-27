@@ -9,7 +9,29 @@ import 'package:movieapp/Features/HomeScreen/presentation/bloc/popular_movies_bl
 import 'package:movieapp/Features/HomeScreen/presentation/pages/MovieByCategory.dart';
 
 class BrowseCategories extends StatelessWidget {
-  const BrowseCategories({super.key});
+
+  List<String>image=[
+    "assets/images/action.jpg",
+    "assets/images/adv.jpeg",
+    "assets/images/animation.jpeg",
+    "assets/images/comedy.jpg",
+    "assets/images/crimejpeg.jpeg",
+    "assets/images/doc.jpeg",
+    "assets/images/drama.jpeg",
+    "assets/images/family.jpeg",
+    "assets/images/fan.jpeg",
+    "assets/images/history.jpeg",
+    "assets/images/horror.jpeg",
+    "assets/images/music.jpeg",
+    "assets/images/mystry.jpeg",
+    "assets/images/romance.jpeg",
+    "assets/images/science.jpeg",
+    "assets/images/Tv.jpeg",
+    "assets/images/trie.jpeg",
+    "assets/images/war.jpeg",
+    "assets/images/westren.jpeg"
+
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +67,10 @@ class BrowseCategories extends StatelessWidget {
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
-                              Image.asset("assets/images/category.png",
+                              Image.asset(image[index],
                                   fit: BoxFit.fill, width: 250.w, height: 150.h),
                               Text(PopularMoviesBloc.categoryList[index].name ?? "",
-                                  style: AppStyles.headLine.copyWith(fontSize: 18)),
+                                  style: AppStyles.headLine.copyWith(fontSize: 20,fontWeight: FontWeight.bold)),
                             ],
                           ),
                         ),

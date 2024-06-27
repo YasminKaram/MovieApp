@@ -135,6 +135,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: ListView.builder(
+                            padding: EdgeInsets.symmetric(horizontal: 10.w),
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return InkWell(
@@ -182,7 +183,7 @@ class HomeScreen extends StatelessWidget {
                                                   Icons.bookmark_added,color: AppColors.selectcolor,)
                                               : Icon(
                                                   size: 42.r,
-                                                  Icons.bookmark_add_rounded,color: AppColors.iconadd),
+                                                  Icons.bookmark_add_rounded,color: AppColors.unselectcolor),
                                         ))
                                   ],
                                 ),

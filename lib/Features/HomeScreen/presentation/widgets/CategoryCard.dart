@@ -53,7 +53,7 @@ class CategoryMovieCard extends StatelessWidget {
                       Icons.bookmark_added,color: AppColors.selectcolor,)
                         : Icon(
                         size: 45.r,
-                        Icons.bookmark_add_rounded,color: AppColors.iconadd),
+                        Icons.bookmark_add_rounded,color: AppColors.unselectcolor),
                   )
                 )
               ],

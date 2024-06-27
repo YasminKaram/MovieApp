@@ -60,10 +60,10 @@ flutter_native_splash:
   background_image: assets/images/splash.png
 
   android_12:
-    image: assets/images/splash.png
+    image: assets/images/ic_launcher.png
     color: "#121312"
     icon_background_color: "#121312"
-    branding: assets/images/logodown.png
+    branding: "by yasmin karam"
 
 dev_dependencies:
 

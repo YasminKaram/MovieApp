@@ -51,7 +51,7 @@ class CardMovie extends StatelessWidget {
                         ? Icon(
                             size: 42.r,
                             Icons.bookmark_add_rounded,
-                            color: AppColors.iconadd,
+                            color: AppColors.unselectcolor,
                           )
                         : Icon(
                             size: 42.r,

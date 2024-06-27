@@ -50,7 +50,7 @@ class SearchScreen extends StatelessWidget {
                 hintStyle: MaterialStatePropertyAll(
                     AppStyles.date.copyWith(fontSize: 15.sp)),
                 backgroundColor:
-                MaterialStatePropertyAll(AppColors.darkgray),
+                MaterialStatePropertyAll(AppColors.unselectcolor),
                 leading: Icon(Icons.search,color: Colors.white),
                 textStyle: MaterialStatePropertyAll(AppStyles.headLine),
 
@@ -91,7 +91,7 @@ class SearchScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(Icons.local_movies_rounded,
-                            color: AppColors.darkgray, size: 70.r),
+                            color: AppColors.unselectcolor, size: 70.r),
                         Text(
                           "No Movies Found",
                           style: AppStyles.date.copyWith(fontSize: 18),

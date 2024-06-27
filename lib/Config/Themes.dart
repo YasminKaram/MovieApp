@@ -7,7 +7,7 @@ class MyThemes {
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: AppColors.primaryblack,
         type: BottomNavigationBarType.shifting,
-        selectedItemColor: AppColors.selectcolor,
+        selectedItemColor: AppColors.whitecolor,
         unselectedItemColor: AppColors.unselectcolor,
         elevation: 0,
       ));
